@@ -23,8 +23,8 @@ const Contact: React.FC = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, title: 'Email', value: 'hamad.sedrati@example.com', href: 'mailto:hamad.sedrati@example.com' },
-    { icon: Phone, title: 'Phone', value: '+1 (555) 123-4567', href: 'tel:+15551234567' },
+    { icon: Mail, title: 'Email', value: 'hamadsedrati@gmail.com', href: 'mailto:hamadsedrati@gmail.com' },
+    { icon: Phone, title: 'Phone', value: '+973 38443190', href: 'tel:+97338443190' },
     { icon: MapPin, title: 'Location', value: 'Available Worldwide', href: '#' },
   ];
 
