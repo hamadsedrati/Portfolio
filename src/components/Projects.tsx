@@ -119,9 +119,14 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="cyber-button">
+          <a 
+            href="https://github.com/hamadsedrati" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="cyber-button inline-flex items-center"
+          >
             View All Projects
-          </button>
+          </a>
         </div>
       </div>
     </section>
