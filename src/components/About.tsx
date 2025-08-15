@@ -5,7 +5,7 @@ const About: React.FC = () => {
   const achievements = [
     { icon: Award, title: 'Certified Security Professional', description: 'Multiple industry certifications' },
     { icon: Target, title: 'Penetration Testing Expert', description: '100+ security assessments completed' },
-    { icon: Briefcase, title: 'Full-Stack Developer', description: '5+ years of development experience' },
+    { icon: Briefcase, title: 'Security Architect', description: '5+ years of security architecture experience' },
     { icon: User, title: 'Security Consultant', description: 'Helping businesses secure their digital assets' },
   ];
 
@@ -43,7 +43,8 @@ const About: React.FC = () => {
                   </p>
                   <p>
                     My dual expertise in cybersecurity and full-stack development allows me 
-                    to build applications with security considerations from the ground up.
+                    My expertise in cybersecurity allows me to design and implement 
+                    comprehensive security solutions from the ground up.
                   </p>
                 </div>
                 <div className="text-cyber-green mt-4">$ _</div>

@@ -8,7 +8,6 @@ const Hero: React.FC = () => {
 
   const texts = [
     'Cybersecurity Specialist',
-    'Full-Stack Developer',
     'Security Consultant',
     'Penetration Tester'
   ];
@@ -62,7 +61,7 @@ const Hero: React.FC = () => {
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
             Protecting digital assets and building secure applications with expertise in 
             <span className="text-cyber-green"> cybersecurity</span>, 
-            <span className="text-cyber-blue"> full-stack development</span>, and 
+            <span className="text-cyber-blue"> security consulting</span>, and 
             <span className="text-cyber-cyan"> penetration testing</span>.
           </p>
 

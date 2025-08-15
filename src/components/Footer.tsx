@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
               <span className="text-xl font-bold cyber-gradient">Hamad Sedrati</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Cybersecurity specialist and full-stack developer dedicated to building secure, 
+              Cybersecurity specialist dedicated to building secure, 
               scalable solutions for the digital world.
             </p>
           </div>
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-gray-400">
               <li className="hover:text-cyber-cyan transition-colors cursor-pointer">Penetration Testing</li>
               <li className="hover:text-cyber-cyan transition-colors cursor-pointer">Security Audits</li>
-              <li className="hover:text-cyber-cyan transition-colors cursor-pointer">Web Development</li>
+              <li className="hover:text-cyber-cyan transition-colors cursor-pointer">Security Architecture</li>
               <li className="hover:text-cyber-cyan transition-colors cursor-pointer">Security Consulting</li>
             </ul>
           </div>

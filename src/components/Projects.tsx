@@ -22,13 +22,13 @@ const Projects: React.FC = () => {
       features: ['Automated Scanning', 'Custom Rules Engine', 'PDF Reports', 'API Integration']
     },
     {
-      title: 'Secure E-commerce Platform',
-      description: 'Full-stack e-commerce solution with advanced security features, payment processing, and fraud detection.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['JavaScript', 'Node.js', 'MongoDB', 'Stripe'],
-      category: 'Full-Stack Development',
-      icon: Code,
-      features: ['Secure Payments', 'Fraud Detection', 'Admin Dashboard', 'Mobile Responsive']
+      title: 'Security Compliance Framework',
+      description: 'Comprehensive security compliance framework for enterprise environments with automated auditing and reporting.',
+      image: 'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tech: ['Python', 'PowerShell', 'YAML', 'Docker'],
+      category: 'Compliance & Auditing',
+      icon: Shield,
+      features: ['Automated Auditing', 'Compliance Reports', 'Policy Management', 'Risk Assessment']
     },
     {
       title: 'Network Security Monitor',
@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyber-blue to-cyber-cyan mx-auto mb-8"></div>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            A showcase of cybersecurity solutions and full-stack applications built with modern technologies
+            A showcase of cybersecurity solutions and security tools built with modern technologies
           </p>
         </div>
 
