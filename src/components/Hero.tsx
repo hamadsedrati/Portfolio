@@ -73,10 +73,13 @@ const Hero: React.FC = () => {
                 Security Portfolio
               </span>
             </button>
-            <button className="px-8 py-3 border-2 border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan hover:text-dark-bg transition-all duration-300 rounded-lg font-semibold">
+            <a
+              href="#projects"
+              className="px-8 py-3 border-2 border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan hover:text-dark-bg transition-all duration-300 rounded-lg font-semibold inline-flex items-center"
+            >
               <Code className="w-5 h-5 inline mr-2" />
               View Projects
-            </button>
+            </a>
           </div>
 
           <div className="flex justify-center space-x-8 text-sm text-gray-400">
