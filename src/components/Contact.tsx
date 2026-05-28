@@ -52,7 +52,6 @@ const Contact: React.FC = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/hamadsedrati', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/hamad-sedrati/', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
   ];
 
   return (
