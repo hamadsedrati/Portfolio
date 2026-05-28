@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Hamad</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Hamad Sedrati</span>
           </h1>
 
           <div className="h-16 mb-8">
