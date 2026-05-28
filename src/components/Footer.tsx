@@ -8,33 +8,32 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Shield className="w-8 h-8 text-cyber-cyan" />
-              <span className="text-xl font-bold cyber-gradient">Hamad Sedrati</span>
+              <Shield className="w-8 h-8 text-red-500" />
+              <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Hamad Sedrati</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Cybersecurity specialist dedicated to building secure, 
-              scalable solutions for the digital world.
+              Aspiring penetration tester exploring offensive security, infrastructure auditing, and secure automation.
             </p>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Focus Areas</h3>
             <ul className="space-y-2 text-gray-400">
-              <li className="hover:text-cyber-cyan transition-colors cursor-pointer">Penetration Testing</li>
-              <li className="hover:text-cyber-cyan transition-colors cursor-pointer">Security Audits</li>
-              <li className="hover:text-cyber-cyan transition-colors cursor-pointer">Security Architecture</li>
-              <li className="hover:text-cyber-cyan transition-colors cursor-pointer">Security Consulting</li>
+              <li className="hover:text-red-500 transition-colors cursor-pointer">Penetration Testing</li>
+              <li className="hover:text-red-500 transition-colors cursor-pointer">Vulnerability Assessments</li>
+              <li className="hover:text-red-500 transition-colors cursor-pointer">Network Reconnaissance</li>
+              <li className="hover:text-red-500 transition-colors cursor-pointer">Automation & Scripting</li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#home" className="hover:text-cyber-cyan transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-cyber-cyan transition-colors">About</a></li>
-              <li><a href="#skills" className="hover:text-cyber-cyan transition-colors">Skills</a></li>
-              <li><a href="#projects" className="hover:text-cyber-cyan transition-colors">Projects</a></li>
-              <li><a href="#contact" className="hover:text-cyber-cyan transition-colors">Contact</a></li>
+              <li><a href="#home" className="hover:text-red-500 transition-colors">Home</a></li>
+              <li><a href="#about" className="hover:text-red-500 transition-colors">About</a></li>
+              <li><a href="#skills" className="hover:text-red-500 transition-colors">Skills</a></li>
+              <li><a href="#projects" className="hover:text-red-500 transition-colors">Projects</a></li>
+              <li><a href="#contact" className="hover:text-red-500 transition-colors">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -42,10 +41,10 @@ const Footer: React.FC = () => {
         <div className="border-t border-dark-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Hamad Sedrati. All rights reserved.
+              © {new Date().getFullYear()} Hamad Sedrati. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm flex items-center mt-4 md:mt-0">
-              Made with <Heart className="w-4 h-4 text-red-500 mx-1" /> for a secure digital future
+              Made with <Heart className="w-4 h-4 text-red-600 mx-1 animate-pulse" /> for an offensive secure future
             </p>
           </div>
         </div>
