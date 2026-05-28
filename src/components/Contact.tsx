@@ -15,7 +15,6 @@ const Contact: React.FC = () => {
     setStatus('Sending...');
 
     try {
-      // REPLACE THIS URL with your Formspree or Web3Forms endpoint
       const response = await fetch('https://formspree.io/f/xpqnbzll', {
         method: 'POST',
         headers: {
