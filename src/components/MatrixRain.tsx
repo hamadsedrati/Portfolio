@@ -25,10 +25,12 @@ const MatrixRain: React.FC = () => {
     }
 
     const draw = () => {
+      // Fade effect (black with slight transparency)
       ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = "#00ff41";
+      // Red color for the rain
+      ctx.fillStyle = "#ff0000"; 
       ctx.font = fontSize + "px JetBrains Mono";
 
       for (let i = 0; i < drops.length; i++) {
