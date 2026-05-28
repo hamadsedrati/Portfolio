@@ -31,7 +31,7 @@ const Header: React.FC = () => {
           {/* Logo - Left */}
           <div className="flex items-center space-x-2 z-10">
             <Shield className="w-8 h-8 text-red-500" />
-            <span className="text-xl font-bold text-red-500">Hamad</span>
+            <span className="text-xl font-bold text-red-500">Hamad Sedrati</span>
           </div>
 
           {/* Desktop Nav - Absolute Centered */}
