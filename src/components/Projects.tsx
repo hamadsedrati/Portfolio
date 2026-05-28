@@ -46,17 +46,17 @@ const Projects: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Featured <span className="cyber-gradient">Projects</span>
+            Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Projects</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-cyber-blue to-cyber-cyan mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-red-900 mx-auto mb-8"></div>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            A showcase of cybersecurity solutions and security tools built with modern technologies
+            A showcase of offensive security solutions and custom tools built with modern technologies.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="project-card rounded-lg overflow-hidden group">
+            <div key={index} className="project-card rounded-lg overflow-hidden group border border-dark-border hover:border-red-500">
               <div className="relative">
                 <img 
                   src={project.image} 
@@ -65,15 +65,15 @@ const Projects: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/80 to-transparent"></div>
                 <div className="absolute top-4 left-4">
-                  <div className="flex items-center px-3 py-1 bg-dark-bg/80 rounded-full">
-                    <project.icon className="w-4 h-4 text-cyber-cyan mr-2" />
+                  <div className="flex items-center px-3 py-1 bg-dark-bg/80 rounded-full border border-dark-border">
+                    <project.icon className="w-4 h-4 text-red-500 mr-2" />
                     <span className="text-xs text-gray-300">{project.category}</span>
                   </div>
                 </div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-cyber-cyan transition-colors">
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-500 transition-colors">
                   {project.title}
                 </h3>
                 <p className="text-gray-400 mb-4 leading-relaxed">
@@ -81,11 +81,11 @@ const Projects: React.FC = () => {
                 </p>
                 
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-cyber-cyan mb-2">Key Features:</h4>
+                  <h4 className="text-sm font-semibold text-red-500 mb-2">Key Features:</h4>
                   <div className="grid grid-cols-2 gap-2">
                     {project.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center text-xs text-gray-400">
-                        <div className="w-1 h-1 bg-cyber-green rounded-full mr-2"></div>
+                        <div className="w-1 h-1 bg-red-500 rounded-full mr-2"></div>
                         {feature}
                       </div>
                     ))}
@@ -104,11 +104,11 @@ const Projects: React.FC = () => {
                 </div>
                 
                 <div className="flex space-x-4">
-                  <button className="flex-1 flex items-center justify-center px-4 py-2 bg-gradient-to-r from-cyber-blue to-cyber-cyan text-white rounded-lg hover:shadow-lg hover:shadow-cyber-cyan/30 transition-all duration-300">
+                  <button className="flex-1 flex items-center justify-center px-4 py-2 bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] transition-all duration-300">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Live Demo
                   </button>
-                  <button className="flex items-center justify-center px-4 py-2 border border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan hover:text-dark-bg rounded-lg transition-all duration-300">
+                  <button className="flex items-center justify-center px-4 py-2 border border-red-500 text-red-500 hover:bg-red-500 hover:text-white rounded-lg transition-all duration-300">
                     <Github className="w-4 h-4 mr-2" />
                     Code
                   </button>
@@ -123,7 +123,7 @@ const Projects: React.FC = () => {
             href="https://github.com/hamadsedrati" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="cyber-button inline-flex items-center"
+            className="px-8 py-3 bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg inline-flex items-center hover:shadow-[0_0_15px_rgba(220,38,38,0.5)] transition-all duration-300"
           >
             View All Projects
           </a>
