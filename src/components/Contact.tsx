@@ -23,15 +23,13 @@ const Contact: React.FC = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, title: 'Email', value: 'hamadsedrati@gmail.com', href: 'mailto:hamadsedrati@gmail.com' },
     { icon: Phone, title: 'Phone', value: '+973 38443190', href: 'tel:+97338443190' },
     { icon: MapPin, title: 'Location', value: 'Available Worldwide', href: '#' },
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/hamadsedrati', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/hamad-sedrati/', label: 'LinkedIn' },
   ];
 
   return (
