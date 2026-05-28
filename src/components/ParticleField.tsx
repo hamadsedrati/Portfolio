@@ -53,7 +53,8 @@ const ParticleField: React.FC = () => {
         if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
 
         const alpha = 1 - particle.life / particle.maxLife;
-        ctx.fillStyle = `rgba(0, 255, 255, ${alpha})`;
+        // Red particles
+        ctx.fillStyle = `rgba(220, 38, 38, ${alpha})`;
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
         ctx.fill();
@@ -63,8 +64,8 @@ const ParticleField: React.FC = () => {
         }
       });
 
-      // Draw connections
-      ctx.strokeStyle = 'rgba(0, 255, 255, 0.1)';
+      // Red connections
+      ctx.strokeStyle = 'rgba(220, 38, 38, 0.1)';
       ctx.lineWidth = 1;
       particles.forEach((particle, i) => {
         particles.slice(i + 1).forEach(otherParticle => {
