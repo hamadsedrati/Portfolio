@@ -3,34 +3,43 @@ import { ChevronDown, Shield, Terminal, Crosshair } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
-
-  const texts = [
-    'Aspiring Penetration Tester',
-    'Red Team Enthusiast',
-    'Hands-on IT Specialist'
-  ];
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
 
   useEffect(() => {
-    if (currentTextIndex < texts.length) {
-      const currentText = texts[currentTextIndex];
-      if (currentIndex < currentText.length) {
-        const timer = setTimeout(() => {
-          setDisplayText(currentText.slice(0, currentIndex + 1));
-          setCurrentIndex(currentIndex + 1);
-        }, 100);
-        return () => clearTimeout(timer);
-      } else {
-        const timer = setTimeout(() => {
-          setCurrentIndex(0);
-          setDisplayText('');
-          setCurrentTextIndex((currentTextIndex + 1) % texts.length);
-        }, 2000);
-        return () => clearTimeout(timer);
-      }
+    const texts = [
+      'Aspiring Penetration Tester',
+      'Red Team Enthusiast',
+      'Hands-on IT Specialist'
+    ];
+    
+    const currentText = texts[loopNum % texts.length];
+    let timer: NodeJS.Timeout;
+
+    if (isDeleting) {
+      // Deleting text (faster than typing)
+      timer = setTimeout(() => {
+        setDisplayText(currentText.substring(0, displayText.length - 1));
+      }, 50);
+    } else {
+      // Typing text
+      timer = setTimeout(() => {
+        setDisplayText(currentText.substring(0, displayText.length + 1));
+      }, 100);
     }
-  }, [currentIndex, currentTextIndex, texts]);
+
+    // Logic to switch between typing and deleting
+    if (!isDeleting && displayText === currentText) {
+      // Pause at the end before starting to delete
+      timer = setTimeout(() => setIsDeleting(true), 2000);
+    } else if (isDeleting && displayText === '') {
+      // Once fully deleted, move to the next word and start typing
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+    }
+
+    return () => clearTimeout(timer);
+  }, [displayText, isDeleting, loopNum]);
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -48,7 +57,7 @@ const Hero: React.FC = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Hamad Sedrati</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Hamad</span>
           </h1>
 
           <div className="h-16 mb-8">
